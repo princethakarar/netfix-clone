@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', Roboto, Ubuntu,
+    sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+:root {
+  --color: rgb(229, 9, 20);
+  --border: rgb(172, 172, 172);
+}
+
+.main {
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-size: max(2000px, 100vw);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.612) 0,
+      rgba(0, 0, 0, 0.457) 60%,
+      rgba(0, 0, 0, 0.712) 100%
+    ),
+    url('assets/images/background.jpg');
+}
+
+.main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 150px;
+  padding-top: 24px;
+}
+
+.main nav .logo {
+  width: 150px;
+}
+
+.main nav .buttons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.main nav .buttons .btn1 {
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background-color: rgba(111, 111, 111, 0.084);
+  color: white;
+}
+
+.main nav .buttons .btn2 {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+  color: white;
+  background-color: var(--color);
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.main .cont {
+  color: white;
+  display: flex;
+  gap: 18px;
+  height: 100%;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.main .cont p:first-child {
+  font-size: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.main .cont p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main .cont p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail .mail {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.47);
+  color: white;
+  padding: 17px 200px 17px 15px;
+}
+
+.detail input::placeholder {
+  color: var(--border);
+  font-size: 17px;
+}
+
+.detail button {
+  background-color: var(--color);
+  color: white;
+  padding: 10px 25px;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.sep {
+  width: 100%;
+  height: 9px;
+  background-color: rgb(33, 32, 32);
+}
+
+section {
+  height: 57vh;
+  width: 63vw;
+  padding: 75px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+section .one {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  width: 40%;
+}
+
+section .two {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .one h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+section .one p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.common img {
+  width: 37vw;
+  position: relative;
+  z-index: 10;
+}
+
+.common video {
+  position: absolute;
+  width: 29vw;
+  right: 5vw;
+  top: 5vw;
+}
+
+.third video {
+  width: 23vw;
+  right: 7vw;
+  top: 2vw;
+}
+
+.faq {
+  color: white;
+  flex-direction: column;
+  width: 63vw;
+  height: auto;
+  padding: 60px 0;
+}
+
+.faq h2 {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.faq .questions {
+  display: flex;
+  position: relative;
+  width: 80vw;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.faq .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  background-color: #2d2d2d;
+  padding: 27px;
+  transition: 0.3s;
+}
+
+.faq .question:hover {
+  background-color: #414141;
+}
+
+.faq .question p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faq .question i {
+  font-size: 35px;
+}
+
+.faq > p {
+  font-size: 20px;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  text-align: center;
+} 
+
+/* @media screen and (max-width: 1280px) {
+    .main nav{
+        margin: 0 30px; 
+    }
+}*/
+
+@media screen and (max-width: 1920px) {
+  section {
+    width: 80vw;
+  }
+
+  .faq {
+    width: 75vw;
+  } 
+}
+
+@media screen and (max-width: 1280px) {
+  section {
+    width: 95vw;
+  }
+
+  .faq {
+    width: 90vw;
+  }
+
+  .faq .questions {
+    left: -25px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    height: 75vh;
+  }
+
+  .main nav {
+    margin: 0 25px;
+  }
+
+  .main nav .logo {
+    width: 100px;
+  }
+
+  .main nav .buttons {
+    gap: 8px;
+  }
+
+  .main .cont {
+    width: 90%;
+  }
+
+  .main .cont p:first-child {
+    font-size: 32px;
+  }
+
+  section {
+    flex-direction: column;
+    height: 67vh;
+    gap: 40px;
+  }
+
+  .fourth {
+    flex-direction: column-reverse;
+  }
+
+  section .one {
+    gap: 15px;
+    width: 85vw;
+  }
+
+  section .two {
+    width: 85vw;
+  }
+
+  section .one h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  section .one p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  section .two {
+    width: 80vw;
+  }
+
+  .common img {
+    width: 67vw;
+  }
+
+  .common video {
+    width: 49vw;
+    right: 16vw;
+    top: 10vw;
+  }
+
+  .third video {
+    width: 41vw;
+    right: 20vw;
+    top: 4vw;
+  }
+
+  .faq h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .faq .question {
+    padding: 20px;
+  }
+
+  .faq .questions {
+    margin-top: 0;
+  }
+
+  .faq .question p{
+    font-size: 18px;
+  }
+
+  .faq p {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .faq{
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .main {
+    height: 60vh;
+  }
+
+  section .one {
+    width: 85vw;
+    gap: 18px;
+  }
+
+  section .two {
+    width: 93vw;
+  }
+
+  .common img {
+    width: 90vw;
+  }
+
+  .common video {
+    width: 66vw;
+    right: 14vw;
+    top: 14vw;
+  }
+
+  .third video {
+    width: 55vw;
+    right: 19vw;
+    top: 6vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    height: 85vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .detail .mail {
+    padding-right: 150px;
+  }
+
+  .common img {
+    width: 90vw;
+  }
+
+  .common video {
+    width: 65vw;
+    top: 13vw;
+  }
+
+  .third video {
+    width: 57vw;
+    top: 5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    height: 65vh;
+  }
+
+  .main nav .buttons .btn1 span {
+    display: none;
+  }
+
+  .main nav {
+    margin: 0 20px;
+  }
+
+  .main nav .buttons .btn2 {
+    font-size: 13px;
+    padding: 4px 12px;
+  }
+
+  .main .cont {
+    width: 95%;
+  }
+
+  .main .cont p:first-child {
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  .detail {
+    flex-direction: column;
+  }
+
+  .detail .mail {
+    padding-right: 55vw;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .main {
+    height: 70vh;
+  }
+
+  section {
+    gap: 32px;
+    height: 90vw;
+  }
+
+  .main .cont {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .detail .mail {
+    padding-right: 45vw;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .main {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main {
+    height: 85vh;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .main {
+    height: 80vh;
+  }
+
+  .detail .mail {
+    padding-right: 35vw;
+  }
+
+  .detail button {
+    font-size: 20px;
+  }
+
+  section {
+    gap: 32px;
+    height: 105vw;
+  }
+}
+
+@media screen and (max-width: 295px) {
+  .main nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .main .cont {
+    justify-content: flex-start;
+    width: 92%;
+    margin-top: 20px;
+  }
+
+  .detail .mail {
+    padding-right: 25vw;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .main {
+    height: 85vh;
+  }
+
+  section {
+    height: 135vw;
+  }
+
+  .detail .mail {
+    padding-right: 20vw;
+  }
+}
